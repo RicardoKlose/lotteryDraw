@@ -1,0 +1,79 @@
+@import './bulma/bulma.sass';
+
+* {
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+
+html {
+    background-color: $light;
+    min-height: 100%;
+    overflow-y: auto;
+}
+
+.brand-title {
+    font-weight: bold;
+    line-height: 3.25rem;
+    font-size: 1.5rem;
+    padding: 0 3rem;
+}
+
+.navbar-menu .navbar-item.is-active {
+    background-color: $light !important;
+}
+
+.main-app {
+    padding: 10px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.line-first {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.line-middle {
+    display: flex;
+    justify-content: center;
+    .app-title {
+        line-height: 2.25rem;
+        color: $black;
+        font-weight: bold;
+    }
+}
+
+.line-last {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttons-container {
+    display: flex;
+}
+
+.balls-container {
+    display: flex;
+    .ball {
+        font-weight: bold;
+        color: $dark;
+        margin: 2px 5px;
+        min-width: 3rem;
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem;
+        .ball-content {
+            width: 2rem;
+            height: 2rem;
+            line-height: 2rem;
+            border-radius: 50%;
+            text-align: center;
+            box-shadow: 0.1rem 0.1rem 0.2rem $black;
+        }
+        .normal-ball {
+            background: linear-gradient(135deg, $red, $white 120%);
+        }
+        .special-ball {
+            background: linear-gradient(135deg, $blue, $white 120%);
+        }
+    }
+}

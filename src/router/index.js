@@ -1,15 +1,22 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import HelloWorld from '@/components/HelloWorld';
+import Double from '@/components/Double';
+import Mega from '@/components/Mega';
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld,
+      path: '/Double',
+      name: 'Double',
+      component: Double,
+    },
+    {
+      path: '/Mega',
+      name: 'Mega',
+      component: Mega,
     },
   ],
+  linkActiveClass: 'is-active',
 });
