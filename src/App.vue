@@ -22,7 +22,9 @@
         </div>
       </div>
     </nav>
-    <router-view class="main-app" />
+    <transition name="fade" mode="out-in">
+      <router-view class="main-app" />
+    </transition>
   </div>
 </template>
 

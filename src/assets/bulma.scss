@@ -21,6 +21,13 @@ html {
     background-color: $light !important;
 }
 
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .3s;
+}
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
+
 .main-app {
     padding: 10px;
     max-width: 720px;
