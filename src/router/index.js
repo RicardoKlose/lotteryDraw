@@ -17,6 +17,10 @@ export default new Router({
       name: 'Mega',
       component: Mega,
     },
+    {
+      path: '*',
+      redirect: '/Double',
+    },
   ],
   linkActiveClass: 'is-active',
 });
